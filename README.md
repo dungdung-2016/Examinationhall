@@ -1,8 +1,8 @@
 # 월간 개발계획 
 ## `개발 환경` 
 https://start.spring.io/ 
-- Project: 
-- Language: 
+- Project: Examinationhall_Info
+- Language:java8
 - Spring Boot: 
 - Project Metadata: 
 - Dependencies: Spring Web, Lombok
