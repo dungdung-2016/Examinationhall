@@ -2,10 +2,9 @@
 ## `개발 환경` 
 https://start.spring.io/ 
 - Project: Examinationhall_Info
-- Language:java8
-- Spring Boot: 
-- Project Metadata: 
-- Dependencies: Spring Web, Lombok
+- Language:java11
+- Spring Boot: version 2.6.6
+- Dependencies: Web,thymeleaf,jpa,h2,lombok,Validation
 
 ## `Settings`
 @lombok 사용  
