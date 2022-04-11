@@ -9,11 +9,17 @@ import javax.persistence.*;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * Like 엔티티
+ * 게시글 좋아요 기능
+ */
+
 @Entity
 @Getter
 @Setter
 @NoArgsConstructor(access = AccessLevel.PROTECTED)
-public class Like {
+@Table(name = "LIKES")
+public class Like extends BaseTimeEntity{
 
     @Id
     @GeneratedValue
