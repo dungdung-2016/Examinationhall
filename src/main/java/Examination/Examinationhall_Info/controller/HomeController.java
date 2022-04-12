@@ -7,7 +7,7 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 
 /**
- * welcome page
+ * 도메인 주소 입력시 나오는 첫 화면
  */
 @Controller
 @RequiredArgsConstructor
@@ -16,6 +16,7 @@ public class HomeController {
 
     @GetMapping(value = "/")
     public String createForm(Model model){
+
 
         return "home"; //home.html
     }
