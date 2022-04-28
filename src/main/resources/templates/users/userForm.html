@@ -31,6 +31,20 @@
                    th:class="${#fields.hasErrors('username')}? 'form-control fieldError' : 'form-control'">
             <p th:if="${#fields.hasErrors('username')}" th:errors="*{username}">Incorrect date</p>
         </div>
+
+        <div>
+            <div><b th:text="#{label.user.UserJob}">직업</b></div>
+            <div class="radio" th:each="userjob : ${userJobTypes}">
+                <input type="radio" th:field="*{userjob}" th:value="${userjob.name()}">
+                <label th:for="${#ids.prev('userjob')}" th:text="${userjob.description}"></label>
+            </div>
+            <div class="fieldError" th:errors="*{userjob}">
+                직업 오류
+            </div>
+        </div>
+
+
+
         <button type="submit" class="btn btn-primary">Submit</button>
     </form>
     <br/>

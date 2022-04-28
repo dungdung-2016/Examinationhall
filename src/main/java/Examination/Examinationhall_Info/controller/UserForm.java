@@ -1,5 +1,6 @@
 package Examination.Examinationhall_Info.controller;
 
+import Examination.Examinationhall_Info.domain.UserJob;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -13,14 +14,17 @@ import javax.validation.constraints.NotNull;
 @Setter
 public class UserForm {
 
-    @NotBlank(message = "이메일(아이디)를 입력해 주세요.")
+    @NotBlank(message = "이메일(아이디)을(를) 입력해 주세요.")
     private String email;
 
-    @NotNull(message = "비밀번호를 입력해 주세요.")
+    @NotBlank(message = "비밀번호를 입력해 주세요.")
     private String password;
 
-    @NotNull(message = "이름을 입력해 주세요.")
+    @NotBlank(message = "이름을 입력해 주세요.")
     private String username;
+
+    @NotBlank(message = "직업을 선택해 주세요.")
+    private UserJob userjob;
 
 
 

@@ -14,13 +14,10 @@ import org.springframework.web.bind.annotation.GetMapping;
 @Slf4j
 public class HomeController {
 
-    @GetMapping(value = "/")
-    public String createForm(Model model){
-
-
-        return "home"; //home.html
+    @GetMapping("/")
+    public String home(){
+        return "Home";
     }
-
 
 
 
