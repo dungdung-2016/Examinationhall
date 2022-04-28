@@ -5,6 +5,7 @@ https://start.spring.io/
 - Language:java11
 - Spring Boot: version 2.6.6
 - Dependencies: Web,thymeleaf,jpa,h2,lombok,Validation
+- `spring.jpa.hibernate.ddl-auto=create` // 9월 중 none or validate 로 변경 
 
 ## `Settings`
 @lombok 사용  
